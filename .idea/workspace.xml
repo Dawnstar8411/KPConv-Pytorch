@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c41430bb-f551-4c1e-843d-da17057d83ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/plot_convergences.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/visualize_deformations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/args_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/args_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/args_vis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/modelnet40_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/s3dis_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/scannet_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/semantic3d_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets/shapenet_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/blocks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/kernel_points.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/kpcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/kpfcnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/compile_op.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data_prepare_modelnet40.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data_prepare_s3dis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data_prepare_scannet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data_prepare_semantic3d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data_prepare_shapenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/download_scannet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_modelnet40.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_npm3d.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_s3dis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_scannet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_semantic3d.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_semantickitti.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/train_shapenet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/vis_deformations.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_modelnet40.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_s3dis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_scannet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_semantickitti.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_modelnet40.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_s3dis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_scannet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_semantickitti.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/build.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/neighbors/neighbors.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/neighbors/neighbors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/wrapper.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/build.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/grid_subsampling/grid_subsampling.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/grid_subsampling/grid_subsampling.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/wrapper.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_utils/cloud/cloud.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_utils/cloud/cloud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/cpp_utils/nanoflann/nanoflann.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/KDTreeTableAdaptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/knn.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/knn.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/knn_.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/knn_.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/nanoflann.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cpp_wrappers/nearest_neighbors/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_custom_transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_data_processing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_h5_io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_ply_io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_points_rotation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/helper_visualization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/train_modelnet40.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/modelnet40_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9105">
+              <caret line="211" column="35" lean-forward="true" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
+              <folding>
+                <element signature="e#45#58#0" expanded="true" />
+                <element signature="e#741#2495#0" />
+                <element signature="e#23793#24486#0" />
+                <element signature="e#24537#25844#0" />
+                <element signature="e#25900#27779#0" />
+                <element signature="e#27849#28967#0" />
+                <element signature="e#29007#29793#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/helper_data_processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ignored_labels</find>
+      <find>trees</find>
+      <find>name_to_labels</find>
+      <find>label_values</find>
+      <find>label_names</find>
+      <find>label_to_idx</find>
+      <find>num_classes</find>
+      <find>all_splits</find>
+      <find>validation_split</find>
+      <find>185</find>
+      <find>185 187</find>
+      <find>187</find>
+      <find>22.350</find>
+      <find>sort</find>
+      <find>compute_docstring</find>
+      <find>tmp</find>
+      <find>max_count</find>
+      <find>brute_neighbors</find>
+      <find>s_batches</find>
+      <find>layer</find>
+      <find>layers</find>
+      <find>_ActionsContainer</find>
+      <find>create</find>
+      <find>running_mean</find>
+      <find>all_epochs</find>
+      <find>config</find>
+      <find>self</find>
+      <find>bcolors</find>
+      <find>shutil</find>
+      <find>get_worker_info</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>kpconv_net</replace>
+      <replace>BColors</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/grid_subsampling/grid_subsampling.cpp" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/wrapper.cpp" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/build.bat" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/setup.py" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/setup.py" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/neighbors/neighbors.h" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/neighbors/neighbors.cpp" />
+        <option value="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/wrapper.cpp" />
+        <option value="$PROJECT_DIR$/utils/nearest_neighbors/setup.py" />
+        <option value="$PROJECT_DIR$/scripts/compile_op.sh" />
+        <option value="$PROJECT_DIR$/scripts/data_prepare_s3dis.py" />
+        <option value="$PROJECT_DIR$/train_semantickitti.py" />
+        <option value="$PROJECT_DIR$/train_s3dis.py" />
+        <option value="$PROJECT_DIR$/train_scannet.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/scripts/train_npm3d.sh" />
+        <option value="$PROJECT_DIR$/scripts/vis_deformations.sh" />
+        <option value="$PROJECT_DIR$/config/args_vis.py" />
+        <option value="$PROJECT_DIR$/datasets/scannet_loader.py" />
+        <option value="$PROJECT_DIR$/datasets/semantic3d_loader.py" />
+        <option value="$PROJECT_DIR$/datasets/shapenet_loader.py" />
+        <option value="$PROJECT_DIR$/datasets/common.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/test_scannet.py" />
+        <option value="$PROJECT_DIR$/test_semantickitti.py" />
+        <option value="$PROJECT_DIR$/test_s3dis.py" />
+        <option value="$PROJECT_DIR$/test_modelnet40.py" />
+        <option value="$PROJECT_DIR$/scripts/train_s3dis.sh" />
+        <option value="$PROJECT_DIR$/scripts/train_semantickitti.sh" />
+        <option value="$PROJECT_DIR$/utils/utils.py" />
+        <option value="$PROJECT_DIR$/utils/helper_ply_io.py" />
+        <option value="$PROJECT_DIR$/analysis/visualize_deformations.py" />
+        <option value="$PROJECT_DIR$/analysis/plot_convergences.py" />
+        <option value="$PROJECT_DIR$/utils/helper_points_rotation.py" />
+        <option value="$PROJECT_DIR$/utils/helper_visualization.py" />
+        <option value="$PROJECT_DIR$/utils/helper_h5_io.py" />
+        <option value="$PROJECT_DIR$/utils/helper_evaluation.py" />
+        <option value="$PROJECT_DIR$/utils/helper_custom_transform.py" />
+        <option value="$PROJECT_DIR$/models/kernel_points.py" />
+        <option value="$PROJECT_DIR$/models/blocks.py" />
+        <option value="$PROJECT_DIR$/models/kpcnn.py" />
+        <option value="$PROJECT_DIR$/models/kpfcnn.py" />
+        <option value="$PROJECT_DIR$/models/loss.py" />
+        <option value="$PROJECT_DIR$/datasets/s3dis_loader.py" />
+        <option value="$PROJECT_DIR$/config/args_train.py" />
+        <option value="$PROJECT_DIR$/scripts/train_modelnet40.sh" />
+        <option value="$PROJECT_DIR$/utils/helper_data_processing.py" />
+        <option value="$PROJECT_DIR$/scripts/data_prepare_modelnet40.py" />
+        <option value="$PROJECT_DIR$/config/args_test.py" />
+        <option value="$PROJECT_DIR$/datasets/modelnet40_loader.py" />
+        <option value="$PROJECT_DIR$/train_modelnet40.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/KPConv-Pytorch.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="45" />
+    <option name="y" value="23" />
+    <option name="width" value="1735" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KPConv-Pytorch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KPConv-Pytorch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KPConv-Pytorch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KPConv-Pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KPConv-Pytorch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KPConv-Pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/cpp_wrappers" />
+      <recent name="$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/scripts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Bash.train_modelnet40.sh">
+    <configuration name="compile_op.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="KPConv-Pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/compile_op.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_modelnet40.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="KPConv-Pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/train_modelnet40.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="helper_visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KPConv-Pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/helper_visualization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kernel_points" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KPConv-Pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/kernel_points.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KPConv-Pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bash.train_modelnet40.sh" />
+        <item itemvalue="Python.kernel_points" />
+        <item itemvalue="Bash.compile_op.sh" />
+        <item itemvalue="Python.helper_visualization" />
+        <item itemvalue="Python.utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c41430bb-f551-4c1e-843d-da17057d83ec" name="Default Changelist" comment="" />
+      <created>1589972490589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589972490589</updated>
+      <workItem from="1589972493810" duration="12747000" />
+      <workItem from="1590929047044" duration="393000" />
+      <workItem from="1591093094800" duration="34857000" />
+      <workItem from="1591706642640" duration="20000" />
+      <workItem from="1591706686092" duration="87000" />
+      <workItem from="1591706785290" duration="1179000" />
+      <workItem from="1591761347374" duration="44696000" />
+      <workItem from="1591954483533" duration="18952000" />
+      <workItem from="1592450302133" duration="98803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="211734000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="45" y="23" width="1735" height="1026" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20555228" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.379015" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32762313" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.25695932" />
+      <window_info anchor="bottom" id="Pylint" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32959244" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2140244" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.048596114" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32908705" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.257754" />
+      <window_info anchor="bottom" id="Pylint" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/KPConv_Pytorch$utils.coverage" NAME="utils Coverage Results" MODIFIED="1592897513656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/KPConv_Pytorch$data_prepare_modelnet40.coverage" NAME="data_prepare_modelnet40 Coverage Results" MODIFIED="1591851509433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/KPConv_Pytorch$helper_visualization.coverage" NAME="helper_visualization Coverage Results" MODIFIED="1592899600269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/KPConv_Pytorch$kernel_points.coverage" NAME="kernel_points Coverage Results" MODIFIED="1592972395692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/models/kpfcnn_net_scannet.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/kpfcnn_net_s3dis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_npm3d.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/plot_convergence.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/visualization.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/vis_deformations.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/neighbors/neighbors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/shapenet_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_scannet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/args_vis.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1321">
+          <caret line="1238" column="23" selection-start-line="1238" selection-start-column="6" selection-end-line="1238" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_s3dis.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="33" column="22" lean-forward="true" selection-end-line="89" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_semantickitti.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/semantic3d_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cpp_wrappers/cpp_neighbors/wrapper.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/scannet_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_s3dis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="298" selection-start-line="298" selection-end-line="298" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/eulerangles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-end-line="418" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/visualize_deformations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_s3dis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_modelnet40.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/plot_convergences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_custom_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cpp_wrappers/cpp_subsampling/wrapper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compile_op.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_ply_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_points_rotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2668">
+          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
+          <folding>
+            <element signature="e#3696#3707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_h5_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/kernel_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/blocks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/kpcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/kpfcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/s3dis_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_semantickitti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/train_modelnet40.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper_data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/data_prepare_modelnet40.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#178#1425#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/args_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1587">
+          <caret line="69" column="85" selection-start-line="69" selection-start-column="85" selection-end-line="69" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/args_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/modelnet40_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9105">
+          <caret line="211" column="35" lean-forward="true" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
+          <folding>
+            <element signature="e#45#58#0" expanded="true" />
+            <element signature="e#741#2495#0" />
+            <element signature="e#23793#24486#0" />
+            <element signature="e#24537#25844#0" />
+            <element signature="e#25900#27779#0" />
+            <element signature="e#27849#28967#0" />
+            <element signature="e#29007#29793#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_modelnet40.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

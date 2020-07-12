@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+python ../train_modelnet40.py /home/yc/chen/data/point_cloud/modelnet40/
+--dataset_name 'modelnet40'
+--model_name 'KPConv_Net'
+--task 'classification'
+--epochs 500
+--batch_size 1
+--train_steps 300
+--valid_steps 30
+--optimizer 'Adam'
+--lr 0.01
+--momentum 0.98
+--beta 0.999
+--weight_decay 0.001
+--decay_style 'LambdaLR'
+--decay_basenum 0.9772
+--use_batch_norm True
+--batch_norm_momentum 0.99
+--architecture 'simple' \
+               'resnetb' \
+               'resnetb_strided' \
+               'resnetb' \
+               'resnetb' \
+               'resnetb_strided' \
+               'resnetb' \
+               'resnetb' \
+               'resnetb_strided' \
+               'resnetb' \
+               'resnetb' \
+               'resnetb_strided' \
+               'resnetb' \
+               'resnetb' \
+               'global_average'
+--first_features_dim 64
+--in_features_dim 1
+--in_points_dim 3
+--aggregation_mode 'sum'
+--KP_influence 'linear'
+--KP_extent 1.2
+--conv_radius 2.5
+--density_parameter 5
+--deform_radius 6.0
+--modulated True
+--regular_weight_decay 0.001
+--offsets_loss 'fitting'
+--offset_decay 0.1
+--deform_fitting_mode 'point2point'
+--deform_fitting_power 1.0
+--deform_lr_factor 0.1
+--repulse_extent 1.2
+--grad_clip_norm 100
+--batch_average_loss False
+--in_radius 1.0
+--density_parameter 3
+--num_pts 40960
+--num_cls 40
+--num_kpts 15
+--sub_grid_size 0.02
+--fixed_kernel_points 'center'
+--augment_scale_anisotropic True
+--augment_symmetries [True,True,True]
+--augment_rotation 'none'
+--augment_scale_min 0.8
+--augment_scale_max 1.2
+--augment_noise 0.001
+--is_debug True
+
+
+#['simple',
+# 'resnetb',
+# 'resnetb_strided',
+# 'resnetb',
+# 'resnetb_strided',
+# 'resnetb',
+# 'resnetb_strided',
+# 'resnetb_deformable',
+# 'resnetb_deformable_strided',
+# 'resnetb_deformable',
+# 'global_average']
+# Modelnet40
